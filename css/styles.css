@@ -1,0 +1,169 @@
+/* Google-Font-Api-Poppins-Added */
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro:wght@100&family=Bree+Serif&family=Fira+Code:wght@300&family=Luckiest+Guy&family=Orelega+One&family=Poppins:wght@500&family=Source+Sans+Pro:wght@200&display=swap");
+
+/* Common-CSS-And-Utilities */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 100%;
+  background-color: #ffff;
+  font-family: "Poppins";
+}
+
+/* Custom-Css-Property */
+
+:root {
+  --nav-color: #3a3a3a;
+  --btn-background-color: #e02c6d;
+  --btn-color: #ffffff;
+}
+
+/* Nav-Bar-Style-Start */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 0px 100px 0px 120px;
+}
+nav .logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--nav-color);
+}
+.logo .logo-clr-red {
+  color: var(--btn-background-color);
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 10px;
+  list-style-type: none;
+  text-align: center;
+}
+nav > ul > li a {
+  text-decoration: none;
+  color: var(--nav-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+/* Nav-Bar-Style-End */
+
+/* Influencer-title-image-button-div-start */
+
+.container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row-reverse;
+  padding: 0px 150px 0px 120px;
+  height: 390px;
+  margin-bottom: 130px;
+}
+.camera-img-shadow img {
+  width: 400px;
+  height: 374px;
+  margin: 10px;
+}
+/* this is camera background css but i cant and commented and put it here */
+/* .camera-img-shadow svg {
+  display: block;
+  position: absolute;
+  width: 340px;
+  height: 300px;
+  left: 67%;
+  top: 23%;
+  z-index: -1;
+} */
+.camera-img-shadow {
+  border: 3px solid #f1e4ff;
+  margin: 60px 0px 0px 0px;
+}
+.camera-img-shadow img:hover {
+  transform: scale(1.15);
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+.influencer-details-btn {
+  width: 50%;
+  margin: 40px 0px 18px 0px;
+  color: var(--nav-color);
+}
+.sec-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+}
+.details {
+  margin-top: 18px;
+  font-weight: 500;
+  font-size: 13px;
+}
+button {
+  margin-top: 25px;
+  width: 170px;
+  height: 44px;
+  line-height: 24px;
+  padding: 10px 10px;
+  border-radius: 41px;
+  border: 1px solid #e02c6d;
+}
+.prebook-button {
+  cursor: pointer;
+  background-color: var(--btn-background-color);
+  color: var(--btn-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+button span {
+  margin: 0px 8px;
+}
+
+/* Influencer-title-image-button-div-End */
+
+/* Brand-logo-section-Start */
+
+.container-2 {
+  height: 150px;
+  padding: 0px 150px;
+}
+.brand-logo {
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  column-gap: 40px;
+  padding: 0px 70px;
+  /* we can also use background with linear-gradient but this not recomanded in our assignment requirement */
+  /*background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 100%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  ); */
+  border-top: 0.5px solid rgba(192, 204, 218, 0.6);
+  border-bottom: 0.5px solid rgba(192, 204, 218, 0.6);
+}
+.brand-logo img {
+  width: 70px;
+  height: 40px;
+}
+.brand-logo > img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Brand-logo-section-end */
