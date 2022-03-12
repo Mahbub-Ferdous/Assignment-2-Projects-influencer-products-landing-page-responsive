@@ -2,6 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro:wght@100&family=Bree+Serif&family=Fira+Code:wght@300&family=Luckiest+Guy&family=Orelega+One&family=Poppins:wght@500&family=Source+Sans+Pro:wght@200&display=swap");
 
+/* Google-Font-Api-Poppins-Added */
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro:wght@100&family=Bree+Serif&family=Fira+Code:wght@300&family=Inter:wght@100&family=Luckiest+Guy&family=Orelega+One&family=Poppins:wght@500&family=Source+Sans+Pro:wght@200&display=swap");
+
 /* Common-CSS-And-Utilities */
 
 * {
@@ -110,7 +114,7 @@ nav > ul > li a {
   font-weight: 500;
   font-size: 13px;
 }
-button {
+.prebook-button {
   margin-top: 25px;
   width: 170px;
   height: 44px;
@@ -118,8 +122,6 @@ button {
   padding: 10px 10px;
   border-radius: 41px;
   border: 1px solid #e02c6d;
-}
-.prebook-button {
   cursor: pointer;
   background-color: var(--btn-background-color);
   color: var(--btn-color);
@@ -127,7 +129,7 @@ button {
   font-weight: 700;
   font-size: 16px;
 }
-button span {
+.btn-arrow {
   margin: 0px 8px;
 }
 
@@ -138,6 +140,7 @@ button span {
 .container-2 {
   height: 150px;
   padding: 0px 150px;
+  margin-bottom: 30px;
 }
 .brand-logo {
   height: 100px;
@@ -145,7 +148,7 @@ button span {
   grid-template-columns: repeat(7, 1fr);
   align-items: center;
   column-gap: 40px;
-  padding: 0px 70px;
+  padding: 0px 60px;
   /* we can also use background with linear-gradient but this not recomanded in our assignment requirement */
   /*background: linear-gradient(
     90deg,
@@ -160,10 +163,155 @@ button span {
   width: 70px;
   height: 40px;
 }
-.brand-logo > img:hover {
+.brand-logo > a > img:hover {
   transform: scale(1.2);
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
 }
 
 /* Brand-logo-section-end */
+
+/* Popular-Collection-Section-Start */
+
+.container-3 {
+  padding: 0px 190px;
+  color: var(--nav-color);
+  margin-bottom: 80px;
+}
+.container-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 70px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.popular-collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 25px;
+}
+.collection-frame {
+  width: 300px;
+  height: 400px;
+  background: var(--btn-color);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 15px;
+}
+.collection-thumbnail img {
+  border-radius: 5px;
+  width: 270px;
+  height: 200px;
+}
+.collection-details {
+  margin-top: 5px;
+}
+.collection-title {
+  color: #18191f;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+}
+.collection-price {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-top: 5px;
+}
+.collection-info {
+  color: #5e6366;
+  letter-spacing: 0.018em;
+  margin-top: 4px;
+}
+.collection-info .fa-star {
+  font-size: 12px;
+}
+.filled {
+  /* color: #fb8200; */
+  color: #fb8200;
+}
+.collection-info span {
+  margin: 5px 0px 0px 5px;
+  font-size: 12px;
+}
+.collection-info p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  color: #787885;
+}
+
+/* Popular-Collection-Section-End */
+
+/* Seemore-Arrow-Button-start */
+
+.seemore-arrow-btn {
+  color: var(--btn-background-color);
+  margin-top: 40px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  display: grid;
+  justify-content: end;
+  padding: 0px 20px;
+}
+.btn-arrow-sign {
+  margin: 0px 8px;
+}
+
+/* Seemore-Arrow-Button-End */
+
+/* Featured-Products-Section-Start */
+
+.container-4 {
+  padding: 0px 155px;
+  color: var(--nav-color);
+}
+.featured-products {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.product-details {
+  margin: 12px 0px 0px 80px;
+  text-align: justify;
+  font-family: "Poppins";
+  font-style: normal;
+}
+.product-details h1 {
+  color: #0a0826;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 60px;
+}
+.product-details p {
+  font-weight: 700;
+  font-size: 12px;
+  color: #6c6c6c;
+  line-height: 20px;
+}
+.join-now-btn {
+  margin-top: 15px;
+  width: 150px;
+  height: 34px;
+  line-height: 24px;
+  padding: 5px 10px;
+  border: 1px solid #e02c6d;
+  cursor: pointer;
+  background-color: var(--btn-background-color);
+  color: var(--btn-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.featured-products-thumbnail img {
+  width: 350px;
+  height: 214px;
+  border-radius: 7px;
+}
+
+/* Featured-Products-Section-End */
