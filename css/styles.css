@@ -42,7 +42,7 @@ nav .logo {
   line-height: 36px;
   color: var(--nav-color);
 }
-.logo .logo-clr-red {
+.logo-clr-red {
   color: var(--btn-background-color);
 }
 nav ul {
@@ -66,13 +66,15 @@ nav > ul > li a {
 /* Influencer-title-image-button-div-start */
 
 .container-1 {
+  padding: 0px 150px 0px 120px;
+  height: 390px;
+  margin-bottom: 130px;
+}
+.flex-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: row-reverse;
-  padding: 0px 150px 0px 120px;
-  height: 390px;
-  margin-bottom: 130px;
 }
 .camera-img-shadow img {
   width: 400px;
@@ -100,8 +102,8 @@ nav > ul > li a {
   cursor: zoom-in;
 }
 .influencer-details-btn {
-  width: 50%;
-  margin: 40px 0px 18px 0px;
+  /* width: 50%; */
+  margin: 40px 80px 18px 0px;
   color: var(--nav-color);
 }
 .sec-title {
@@ -198,11 +200,17 @@ nav > ul > li a {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   padding: 15px;
+  overflow: hidden;
 }
 .collection-thumbnail img {
   border-radius: 5px;
   width: 270px;
   height: 200px;
+}
+.collection-thumbnail:hover img {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+  /* by the assignment requirement here is animation in photo-frame image */
 }
 .collection-details {
   margin-top: 5px;
@@ -259,6 +267,7 @@ nav > ul > li a {
   display: grid;
   justify-content: end;
   padding: 0px 20px;
+  cursor: pointer;
 }
 .btn-arrow-sign {
   margin: 0px 8px;
@@ -269,7 +278,7 @@ nav > ul > li a {
 /* Featured-Products-Section-Start */
 
 .container-4 {
-  padding: 0px 155px;
+  padding: 0px 165px;
   color: var(--nav-color);
 }
 .featured-products {
@@ -277,7 +286,7 @@ nav > ul > li a {
   flex-direction: row-reverse;
 }
 .product-details {
-  margin: 12px 0px 0px 80px;
+  margin: 6px 0px 0px 100px;
   text-align: justify;
   font-family: "Poppins";
   font-style: normal;
@@ -287,12 +296,15 @@ nav > ul > li a {
   font-weight: 700;
   font-size: 28px;
   line-height: 60px;
+  letter-spacing: 1px;
 }
 .product-details p {
   font-weight: 700;
   font-size: 12px;
   color: #6c6c6c;
   line-height: 20px;
+  text-align: justify;
+  padding: 0px 100px 0px 0px;
 }
 .join-now-btn {
   margin-top: 15px;
@@ -315,3 +327,45 @@ nav > ul > li a {
 }
 
 /* Featured-Products-Section-End */
+
+/* Footer-Section-Start */
+
+.container-5 {
+  margin: 80px 0px 0px 0px;
+  background-color: #0a0826;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-details {
+  width: 262px;
+  height: 172px;
+  padding: 20px;
+  text-align: center;
+}
+.footer-title h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 36px;
+}
+.footer-title p {
+  font-family: "Manrope";
+  font-style: normal;
+  color: #d9dbe1;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+.link-btn {
+  margin: 10px 0px 10px 0px;
+}
+.link-btn > a > i {
+  color: var(--btn-color);
+  padding: 0px 10px;
+  opacity: 0.3;
+}
+
+/* Footer-Section-End */

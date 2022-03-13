@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="images/mic.png" type="image/x-icon" />
     <!-- Stylesheet-Added -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
     <title>Influencer Gear</title>
   </head>
   <body>
@@ -38,72 +39,77 @@
     <!-- Start-Your-Journey-And-Camera-Markup-Start -->
     <main>
       <section class="container-1">
-        <div class="camera-img-shadow">
-          <img src="images/main-camera.png" alt="" />
-          <!-- this is for camera background but i can't fixed it so it was commented -->
-          <!-- <svg
-              width="475"
-              height="475"
-              viewBox="0 0 475 475"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g opacity="0.55">
-                <circle
-                  cx="237.5"
-                  cy="237.5"
-                  r="236"
-                  stroke="#F1E4FF"
-                  stroke-width="3"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M237.5 403.652C329.263 403.652 403.652 329.263 403.652 237.5C403.652 145.737 329.263 71.3479 237.5 71.3479C145.737 71.3479 71.3477 145.737 71.3477 237.5C71.3477 329.263 145.737 403.652 237.5 403.652ZM237.5 335.237C291.478 335.237 335.236 291.479 335.236 237.5C335.236 183.522 291.478 139.763 237.5 139.763C183.521 139.763 139.763 183.522 139.763 237.5C139.763 291.479 183.521 335.237 237.5 335.237Z"
-                  fill="#F1E4FF"
-                />
-              </g>
-            </svg> -->
-        </div>
-        <div class="influencer-details-btn">
-          <h1 class="sec-title">Start your Journey as Influencer</h1>
-          <p class="details">
-            <strong>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-              omnis! Laudantium exercitationem commodi culpa non
-            </strong>
-          </p>
-          <button class="prebook-button">
-            Prebook Now
-            <span class="btn-arrow"
-              ><i class="fa-solid fa-arrow-right-long"></i
-            ></span>
-          </button>
+        <div class="flex-container">
+          <div class="camera-img-shadow">
+            <img src="images/main-camera.png" alt="" />
+            <!-- this is for camera background but i can't fixed it so it was commented -->
+            <!-- <svg
+                width="475"
+                height="475"
+                viewBox="0 0 475 475"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.55">
+                  <circle
+                    cx="237.5"
+                    cy="237.5"
+                    r="236"
+                    stroke="#F1E4FF"
+                    stroke-width="3"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M237.5 403.652C329.263 403.652 403.652 329.263 403.652 237.5C403.652 145.737 329.263 71.3479 237.5 71.3479C145.737 71.3479 71.3477 145.737 71.3477 237.5C71.3477 329.263 145.737 403.652 237.5 403.652ZM237.5 335.237C291.478 335.237 335.236 291.479 335.236 237.5C335.236 183.522 291.478 139.763 237.5 139.763C183.521 139.763 139.763 183.522 139.763 237.5C139.763 291.479 183.521 335.237 237.5 335.237Z"
+                    fill="#F1E4FF"
+                  />
+                </g>
+              </svg> -->
+          </div>
+          <div class="influencer-details-btn">
+            <h1 class="sec-title">Start your Journey as Influencer</h1>
+            <p class="details">
+              <strong>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+                omnis! Laudantium exercitationem commodi culpa non
+              </strong>
+            </p>
+            <button class="prebook-button">
+              Prebook Now
+              <span class="btn-arrow"
+                ><i class="fa-solid fa-arrow-right-long"></i
+              ></span>
+            </button>
+          </div>
         </div>
       </section>
       <!-- Start-Your-Journey-And-Camera-Markup-End -->
       <!-- Brand-Logo-Section-Start -->
       <section class="container-2">
         <div class="brand-logo">
-          <a target="_blank" href="https://www.alibaba.com"
+          <a class="padding-less" target="_blank" href="https://www.alibaba.com"
             ><img src="logos/Alibaba.svg" alt="alibaba.com"
           /></a>
-          <a target="_blank" href="https://www.amazon.com"
+          <a class="padding-less" target="_blank" href="https://www.amazon.com"
             ><img src="logos/Amazon.svg" alt="amazon.com"
           /></a>
-          <a target="_blank" href="https://www.daraz.com.bd"
+          <a class="padding-less" target="_blank" href="https://www.daraz.com.bd"
             ><img src="logos/Daraz.pk Logo.svg" alt="daraz.com"
           /></a>
-          <a target="_blank" href="https://www.ebay.com"
+          <a class="padding-less" target="_blank" href="https://www.ebay.com"
             ><img src="logos/Ebay.svg" alt="ebay.com"
           /></a>
-          <a target="_blank" href="https://www.rakuten.com"
+          <a class="mobile-view" target="_blank" href="https://www.rakuten.com"
             ><img src="logos/Rakuten.svg" alt="rakuten.com"
           /></a>
-          <a target="_blank" href="https://www.walmart.com"
+          <a class="mobile-view" target="_blank" href="https://www.walmart.com"
             ><img src="logos/Walmart.svg" alt="walmart.com"
           /></a>
-          <a target="_blank" href="https://www.target.com.au"
+          <a
+            class="mobile-view"
+            target="_blank"
+            href="https://www.target.com.au"
             ><img src="logos/Target.svg" alt="target.com"
           /></a>
         </div>
@@ -335,6 +341,7 @@
         <!-- Seemore-Arrow-Button-End -->
       </section>
       <!-- Popular-Collection-Section-End -->
+      <!-- Feauture-Products-Section-Start -->
       <section class="container-4">
         <div class="featured-products">
           <div class="product-details">
@@ -357,6 +364,30 @@
           </div>
         </div>
       </section>
+      <!-- Feauture-Products-Section-End -->
     </main>
+    <footer class="container-5">
+      <div class="footer-details">
+        <div class="footer-title">
+          <h3>Influencer<span class="logo-clr-red">Gear</span></h3>
+          <p>Copyright <span>&copy;</span> 2022 Influencer Gear</p>
+          <p>All Rights Reserved</p>
+        </div>
+        <div class="link-btn">
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook-square"></i
+          ></a>
+          <a href="https://www.twitter.com/"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.youtube.com/"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
