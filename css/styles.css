@@ -17,6 +17,7 @@ body {
   max-width: 100%;
   background-color: #ffff;
   font-family: "Poppins";
+  overflow: auto;
 }
 
 /* Custom-Css-Property */
@@ -58,7 +59,31 @@ nav > ul > li a {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+}
+
+/* Mobile-Navbar-Shopping-Cart-Responsive */
+
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.mobile-nav a i {
+  color: var(--nav-color);
+  display: none;
+}
+.mobile-nav a {
+  text-decoration: none;
+}
+.left-nav {
+  position: relative;
+  left: -55px;
+}
+.right-cart {
+  position: relative;
+  left: 55px;
 }
 
 /* Nav-Bar-Style-End */
